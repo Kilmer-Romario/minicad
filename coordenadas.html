@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coordenadas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <div>
+            <h1>TRAZADO DE LINEAS</h1>
+        </div>
+        <form action="directo.php" method="post">
+
+            <p>Metodo directo</p>
+            <label for="">Xo</label>
+            <input type="text" name="Xo">
+            <label for="">Yo</label>
+            <input type="text" name="Yo">
+        </div>
+    <div>
+        <label for="">Xf</label>
+        <input type="text" name="Xf">
+        <label for="">Yf</label>
+        <input type="text" name="Yf">
+    </div>
+    <button type="submit">Dibujar</button>
+    </form>
+    <form action="lineas.php" method="post">
+
+                    <p>ADD entero</p>
+
+            <label for="">Xo</label>
+            <input type="text" name="Xo">
+            <label for="">Yo</label>
+            <input type="text" name="Yo">
+        </div>
+        <div>
+            <label for="">Xf</label>
+            <input type="text" name="Xf">
+            <label for="">Yf</label>
+            <input type="text" name="Yf">
+        </div>
+        <button type="submit">Dibujar</button>
+    </form>
+    <form action="addsimple.php" method="post">
+
+        <p>ADD simple</p>
+        <label for="">Xo</label>
+        <input type="text" name="Xo">
+        <label for="">Yo</label>
+        <input type="text" name="Yo">
+    </div>
+<div>
+    <label for="">Xf</label>
+    <input type="text" name="Xf">
+    <label for="">Yf</label>
+    <input type="text" name="Yf">
+</div>
+<button type="submit">Dibujar</button>
+</form>
+    <div>
+        <h1>TRAZADO DE CIRCUNFERENCIAS</h1>
+    </div>
+        <form action="circulo.php" method="post">
+                <p>Representación implícita</p>
+                <div>
+                    <label for="">radio</label>
+                    <input type="text" name="r">
+                </div>
+                <div>
+                    <label for="">xc</label>
+                    <input type="text" name="xc">
+                    <label for="">yc</label>
+                    <input type="text" name="yc">
+                </div>
+                <button type="submit">Dibujar</button>
+        </form>
+        <br>
+        <form action="circulo_i.php" method="post">
+                <p>Trazado incremental</p>
+                <div>
+                    <label for="">radio</label>
+                    <input type="text" name="r">
+                </div>
+                <div>
+                    <label for="">xc</label>
+                    <input type="text" name="xc">
+                    <label for="">yc</label>
+                    <input type="text" name="yc">
+                </div>
+                <button type="submit">Dibujar</button>
+        </form>
+        <div><h1>TRAZADO DE ELIPSES</h1></div>
+        <form action="elipse.php" method="post">
+                <p>Trazado de punto medio</p>
+                <div>
+                    <label for="">xc</label>
+                    <input type="text" name="xc">
+                    <label for="">yc</label>
+                    <input type="text" name="yc">
+                </div>
+                <div>
+                    <label for="">rx</label>
+                    <input type="text" name="rx">
+                    <label for="">ry</label>
+                    <input type="text" name="ry">
+                </div>
+                <button type="submit">Dibujar</button>
+        </form>
+        <div><h1>TRAZADO DE HIPÉRBOLA</h1></div>
+        <form action="hiperbola.php" method="post">
+                <p>Trazado de punto medio</p>
+                <div>
+                    <label for="">xc</label>
+                    <input type="text" name="xc">
+                    <label for="">yc</label>
+                    <input type="text" name="yc">
+                </div>
+                <div>
+                    <label for="">rx</label>
+                    <input type="text" name="rx">
+                    <label for="">ry</label>
+                    <input type="text" name="ry">
+                </div>
+                <button type="submit">Dibujar</button>
+        </form>
+</body>
+</html>
