@@ -15,7 +15,7 @@
 	  { imageline ( $img, 0,$i, $w, $i, $blanco);
 	  	imageline ( $img, $i,0, $i, $h, $blanco);
 	  }
- *//*
+ */ /*
 	for($i=0; $i<=($radio*2); $i++)
 	{ $x = $radio-$i;
 	  $y= sqrt(pow($radio,2)-pow($x,2));	  

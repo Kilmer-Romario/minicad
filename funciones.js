@@ -6,7 +6,7 @@ function dibujar(){
     contexto.fillStyle = "#ff0000";
 }
 
-function dibujar1(){
+function add_simple(){
     var xo=document.getElementById("xo").value;
     var yo=document.getElementById("yo").value;
     var xf=document.getElementById("xf").value;
@@ -14,27 +14,30 @@ function dibujar1(){
     var contexto = document.getElementById("canvas2D").getContext("2d");
     contexto.fillStyle = "#ff0000";
     var m;
-    var xi=0;
-    var x=0; var y=0;
-    m=(yf-yo)/(xf-xo);
-    if(((Math.abs(m)<1)&&(xo>xf))||((Math.abs(m)>1)&&(yo>yf)))
+    var b;
+    var x; var y; var xr; var yr;var dx; var dy;
+    dx=xf-xo;
+    dy=yf-yo;
+    m=dy/dx;
+   if(((Math.abs(m)<1)&&(xo>xf))||((Math.abs(m)>1)&&(yo>yf)))
     {
-        var b=xf;xf=xo;xo=b;// CAMBIAMOS DE POSICION LOS PUNTOS
+        b=xf;xf=xo;xo=b;// CAMBIAMOS DE POSICION LOS PUNTOS
         b=yf;yf=yo;yo=b;// FINAL A INICIAL Y VICEVERSA SI ES QUE FUERA NECESARIO
     }
     contexto.fillRect(xo+250,yo+250,1,1);
     if(Math.abs(m)<1)
     {
-        var yr=yo;
+        yr=yo;
         for(x=(xo+1);x<=(xf-1);x++)
         {
             yr=yr+m;
-            contexto.fillRect(x+250,Math.round(yr)+250,1,1);
+            contexto.fillRect(x+250,Math.round(yr)-250,1,1);
         }
     }
     else
     {
-        var minversa=1/m;
+        var minversa
+        minversa=1/m;
         xr=xo;
         for(y=(yo+1);y<=(yf-1);y++)
         {

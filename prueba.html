@@ -13,7 +13,7 @@
     <tr>
         <td valign="top">
             <h3>LINEAS</h3>
-            <form action="directo.php" method="post">
+            <form action="" id="form">
                 <div>
                     <label for="">Xo</label>
                     <input type="text" name="Xo" id="xo">
@@ -28,14 +28,12 @@
                     <label for="">Yf</label>
                     <input type="text" name="Yf" id="yf">
                 </div>
-                <div id="linea">
-                    <button type="button">M.Directo</button>
-                    <button type="button">ADD Simple</button>
+                    <button type="button" ">M.Directo</button>
+                    <button type="button" onclick="add_simple()">ADD Simple</button>
                     <button type="button">ADD Entero</button>
-                </div>
             </form>
                 <div>
-                    <h3>CIRCUNFERENCIAS</h3>
+                    <h3>CIRCUNFERENCIA</h3>
                     <form action="" id="form">
                         <div id="radio">
                             <label for="">radio</label>
@@ -51,6 +49,9 @@
                         <button type="button" onclick="c_incremental()">Incremental</button>
                     </form>
                 </div>
+                <div>
+
+                </div>
         </td>
         <td id="centro">
             <div>
@@ -63,7 +64,7 @@
         </td>
         <td id="derecha" valign="top">
                 <div>
-                        <h3>CIRCUNFERENCIAS</h3>
+                        <h3>TRASLACION</h3>
                         <form action="" id="form">
                             <div id="radio">
                                 <label for="">radio</label>
