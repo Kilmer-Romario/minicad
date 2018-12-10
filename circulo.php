@@ -12,8 +12,8 @@ for($xi=-$r;$xi<=$r;$xi++)
 {
     $y=$yc+sqrt(pow($r,2)-pow(($xc-$xi),2));
     imagesetpixel($im,$xi+750,round(($y+500),0),$color);
-    $y=$yc-sqrt(pow($r,2)-pow(($xc-$xi),2));
-    imagesetpixel($im,$xi+750,round(($y+500),0),$color);
+   $y=$yc-sqrt(pow($r,2)-pow(($xc-$xi),2));
+   imagesetpixel($im,$xi+750,round(($y+500),0),$color);
 }
 
 imagepng($im);

@@ -1,3 +1,18 @@
 body{
-    background-color: aquamarine
+    background-color: rgb(32, 177, 129);
+}
+#canvas2D{
+    background-color: #f3c4c4;
+}
+#radio{
+    padding-bottom: 5px;
+}
+button{
+    border-bottom: 50%;
+}
+#izquierda{
+    align-content: flex-start;
+}
+div{
+    padding-bottom: 10px;
 }

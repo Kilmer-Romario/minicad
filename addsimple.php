@@ -8,7 +8,7 @@
     imagecolorallocate($im, 255, 255, 255);//asignamos color a la imagen 
     $color=imagecolorallocate($im,255,0,0);//asignamos color a la imagen
     $m=($Yf-$Yo)/($Xf-$Xo);
-    if(((abs($m)<1)&&($Xi>$Xf))||((abs($m)>1)&&($Yi>$Yf)))
+    if(((abs($m)<1)&&($Xo>$Xf))||((abs($m)>1)&&($Yo>$Yf)))
     {
         $b=$Xf;$Xf=$Xo;$Xo=$b;// CAMBIAMOS DE POSICION LOS PUNTOS
         $b=$Yf;$Yf=$Yo;$Yo=$b;// FINAL A INICIAL Y VICEVERSA SI ES QUE FUERA NECESARIO

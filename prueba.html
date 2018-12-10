@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAVASCRIPT </title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="dibujar()">
+    <div>
+    <table id="todo" cellspacing="10">
+    <tr>
+        <td valign="top">
+            <h3>LINEAS</h3>
+            <form action="directo.php" method="post">
+                <div>
+                    <label for="">Xo</label>
+                    <input type="text" name="Xo" id="xo">
+                    <br>
+                    <label for="">Yo</label>
+                    <input type="text" name="Yo" id="yo">
+                </div>
+                <div>
+                    <label for="">Xf</label>
+                    <input type="text" name="Xf" id="xf">
+                    <br>
+                    <label for="">Yf</label>
+                    <input type="text" name="Yf" id="yf">
+                </div>
+                <div id="linea">
+                    <button type="button">M.Directo</button>
+                    <button type="button">ADD Simple</button>
+                    <button type="button">ADD Entero</button>
+                </div>
+            </form>
+                <div>
+                    <h3>CIRCUNFERENCIAS</h3>
+                    <form action="" id="form">
+                        <div id="radio">
+                            <label for="">radio</label>
+                            <input type="text" name="r" id="r">
+                        </div>
+                        <div>
+                            <label for="">xc</label>
+                            <input type="text" name="xc" id="xc">
+                            <label for="">yc</label>
+                            <input type="text" name="yc" id="yc">
+                        </div>
+                        <button type="button" onclick="c_implicita()">R.Implicita</button>
+                        <button type="button" onclick="c_incremental()">Incremental</button>
+                    </form>
+                </div>
+        </td>
+        <td id="centro">
+            <div>
+                <button type="button" onclick="limpiar()">Limpiar</button>
+            </div>
+                <div>
+                        <canvas id="canvas2D" width="500" height="500"></canvas>
+                        <script src="funciones.js"></script>
+                </div>
+        </td>
+        <td id="derecha" valign="top">
+                <div>
+                        <h3>CIRCUNFERENCIAS</h3>
+                        <form action="" id="form">
+                            <div id="radio">
+                                <label for="">radio</label>
+                                <input type="text" name="r" id="r">
+                            </div>
+                            <div>
+                                <label for="">xc</label>
+                                <input type="text" name="xc" id="xc">
+                                <label for="">yc</label>
+                                <input type="text" name="yc" id="yc">
+                            </div>
+                            <button type="button" onclick="c_implicita()">R.Implicita</button>
+                            <button type="button" onclick="c_incremental()">Incremental</button>
+                        </form>
+                </div>
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
